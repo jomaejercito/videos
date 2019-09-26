@@ -1,9 +1,20 @@
 import React from 'react';
 
 class SearchBar extends React.Component {
-  render() {
-    return <div>SearchBar</div>
-  }
+   state = { term: '' }
+
+   render() {
+      return (
+         <div className="ui segment">
+            <div className="ui form">
+               <div className="field">
+                  <label>Video Search</label>
+                  <input type="text" value={this.state.term} />
+               </div>
+      	   </div>
+         </div>
+      )
+   }
 }
 
 
